@@ -6,13 +6,14 @@
 #    By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 18:34:40 by fkoehler          #+#    #+#              #
-#    Updated: 2016/03/07 14:31:43 by fkoehler         ###   ########.fr        #
+#    Updated: 2016/03/14 21:34:02 by fkoehler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 vpath %.c ./ ./ft_printf
 
 SRC = ft_atoi.c \
+ft_atol.c \
 ft_bzero.c \
 ft_isalnum.c \
 ft_countwords.c \
@@ -39,14 +40,13 @@ ft_memset.c \
 ft_print_array.c \
 ft_putchar.c \
 ft_putchar_fd.c \
+ft_putnchar.c \
 ft_putendl.c \
 ft_putendl_fd.c \
 ft_putnbr.c \
 ft_putnbr_fd.c \
 ft_putstr.c \
 ft_putnstr.c \
-ft_putnspaces.c \
-ft_putnzeros.c \
 ft_putstr_fd.c \
 ft_replace_char.c \
 ft_strcat.c \
