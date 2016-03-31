@@ -6,7 +6,7 @@
 #    By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 18:34:40 by fkoehler          #+#    #+#              #
-#    Updated: 2016/03/20 20:27:47 by fkoehler         ###   ########.fr        #
+#    Updated: 2016/03/31 19:48:50 by fkoehler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,6 +23,7 @@ ft_isspace.c \
 ft_isdigit.c \
 ft_isprint.c \
 ft_itoa.c \
+ft_ltoa_base.c \
 ft_lstadd.c \
 ft_lstdel.c \
 ft_lstdelone.c \

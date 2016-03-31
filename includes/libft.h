@@ -6,7 +6,7 @@
 /*   By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:11:04 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/03/31 17:31:28 by fkoehler         ###   ########.fr       */
+/*   Updated: 2016/03/31 22:36:50 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,6 +56,7 @@ int					ft_isspace(int c);
 int					ft_atoi(const char *str);
 long				ft_atol(const char *str);
 char				*ft_itoa(int n);
+char				*ft_ltoa_base(long nb, int base);
 int					ft_toupper(int c);
 int					ft_tolower(int c);
 
