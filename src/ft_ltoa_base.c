@@ -6,12 +6,11 @@
 /*   By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/31 19:33:09 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/03/31 22:42:50 by fkoehler         ###   ########.fr       */
+/*   Updated: 2016/03/31 23:27:01 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
-#include <ft_printf.h>
 
 static int	ft_count(long nb, int base)
 {
