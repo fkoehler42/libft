@@ -6,15 +6,15 @@
 /*   By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/03/12 17:35:46 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/03/12 17:41:42 by fkoehler         ###   ########.fr       */
+/*   Updated: 2016/03/31 17:30:46 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnchar(char c, int n)
+void	ft_putnchar(char c, size_t n)
 {
-	int		i;
+	size_t	i;
 	char	s[n + 1];
 
 	i = 0;

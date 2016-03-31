@@ -6,7 +6,7 @@
 /*   By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/12 17:21:41 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/03/07 14:32:17 by fkoehler         ###   ########.fr       */
+/*   Updated: 2016/03/31 15:55:18 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,16 @@
 
 # include "libft.h"
 # include <stdarg.h>
+
+# define BLACK	"\033[0;30m"
+# define RED	"\033[0;31m"
+# define GREEN	"\033[0;32m"
+# define YELLOW	"\033[1;33m"
+# define BLUE	"\033[0;34m"
+# define PURPLE	"\033[0;35m"
+# define CYAN	"\033[1;36m"
+# define WHITE	"\033[1;m"
+# define OFF	"\033[0;m"
 
 typedef struct		s_arg
 {
