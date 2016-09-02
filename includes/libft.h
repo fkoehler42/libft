@@ -6,7 +6,7 @@
 /*   By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/24 19:11:04 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/08/26 22:35:31 by fkoehler         ###   ########.fr       */
+/*   Updated: 2016/09/02 15:55:36 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ int					ft_tolower(int c);
 
 size_t				ft_strlen(const char *s);
 size_t				ft_multi_strlen(char **array);
+int					ft_str_isempty(char *s);
 char				*ft_strcpy(char *dst, const char *src);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strchr(const char *s, int c);
@@ -82,6 +83,7 @@ int					ft_strnequ(char const *s1, char const *s2, size_t n);
 int					ft_strcmp(const char *s1, const char *s2);
 int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strstr(const char *big, const char *little);
+int					ft_strstr_index(const char *big, const char *little);
 char				*ft_strnstr(const char *s1, const char *s2, size_t len);
 char				*ft_strnew(size_t size);
 char				*ft_strdup(const char *s1);
