@@ -3,14 +3,12 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+         #
+#    By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 18:34:40 by fkoehler          #+#    #+#              #
-#    Updated: 2016/09/02 15:54:42 by fkoehler         ###   ########.fr        #
+#    Updated: 2017/08/31 15:16:24 by fkoehler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
-
-vpath %.c ./src ./ft_printf
 
 SRC = ft_atoi.c \
 	  ft_atol.c \
@@ -96,27 +94,33 @@ print_char.c print_decimal.c print_decimal1.c print_decimal2.c \
 print_decimal3.c print_hexa.c print_hexa_upper.c print_octal.c print_percent.c \
 print_string.c print_udecimal.c print_wchar_string.c \
 
-
-NAME = libft.a
+.PHONY: all clean fclean re
 
 FLAGS = -Wall -Werror -Wextra
 
+# DIRECTORIES
+INC = ./includes/
+OPATH = ./obj/
+vpath %.c ./src ./ft_printf
+
+# FILES
+NAME = libft.a
 OBJ = $(SRC:.c=.o)
+O2 = $(addprefix $(OPATH), $(OBJ))
 
-.PHONY: all clean fclean re
-
+# PROCESS
 all: $(NAME)
 
-$(NAME): $(OBJ)
-	@ar rc $(NAME) $(OBJ)
+$(NAME): $(O2)
+	@ar rc $(NAME) $(O2)
 	@ranlib $(NAME)
 	@echo "\033[0;32mLibft compilation done !\033[0;m"
 
-%.o: %.c
-	@gcc $(FLAGS) -I ./includes -c $<
+$(OPATH)%.o: %.c
+	@gcc $(FLAGS) -I $(INC) -c $< -o $@
 
 clean:
-	@rm -f $(OBJ)
+	@rm -f $(O2)
 	@echo "\033[0;32mObject files deleted !\033[0;m"
 
 fclean: clean
