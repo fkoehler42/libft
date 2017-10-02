@@ -6,7 +6,7 @@
 /*   By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/02 14:15:59 by fkoehler          #+#    #+#             */
-/*   Updated: 2017/10/02 14:50:43 by fkoehler         ###   ########.fr       */
+/*   Updated: 2017/10/02 15:39:00 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	ft_put_intmax(intmax_t n, int base)
 void	ft_put_uintmax(uintmax_t n, int base)
 {
 	if (n > (unsigned int)base)
-		ft_put_intmax(n / base, base);
+		ft_put_uintmax(n / base, base);
 	if (n % base > 9)
 		ft_putchar(n % base + 87);
 	else
@@ -61,7 +61,7 @@ void	ft_put_intmax_fd(intmax_t n, int base, int fd)
 void	ft_put_uintmax_fd(uintmax_t n, int base, int fd)
 {
 	if (n > (unsigned int)base)
-		ft_put_intmax_fd(n / base, base, fd);
+		ft_put_uintmax_fd(n / base, base, fd);
 	if (n % base > 9)
 		ft_putchar_fd(n % base + 87, fd);
 	else
