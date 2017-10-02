@@ -6,7 +6,7 @@
 #    By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2015/12/02 18:34:40 by fkoehler          #+#    #+#              #
-#    Updated: 2017/10/02 14:04:22 by fkoehler         ###   ########.fr        #
+#    Updated: 2017/10/02 14:34:14 by fkoehler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,6 +40,7 @@ SRC = ft_atoi.c \
 	  ft_multi_strlen.c \
 	  ft_multi_strjoin.c \
 	  ft_print_array.c \
+	  ft_put_intmax.c \
 	  ft_putchar.c \
 	  ft_putchar_fd.c \
 	  ft_putnchar.c \
