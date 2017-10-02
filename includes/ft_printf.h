@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: fkoehler <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: fkoehler <fkoehler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/01/12 17:21:41 by fkoehler          #+#    #+#             */
-/*   Updated: 2016/03/31 15:55:18 by fkoehler         ###   ########.fr       */
+/*   Updated: 2017/10/02 14:05:53 by fkoehler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include "libft.h"
 # include <stdarg.h>
+# include <inttypes.h>
 
 # define BLACK	"\033[0;30m"
 # define RED	"\033[0;31m"
